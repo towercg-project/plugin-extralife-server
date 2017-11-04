@@ -8,7 +8,7 @@ import { pluginReducer } from './reducer';
 export class ExtraLifePlugin extends TowerCGServer.ServerPlugin {
   static pluginName = "extralife";
   static reducer = pluginReducer;
-  static defaultConfig = { tickRate: 10000, logTicks: false, teams: {}, users: {} };
+  static defaultConfig = { tickRate: 3000, logTicks: false, teams: {}, users: {} };
 
   async initialize() {
     this._refreshExtraLifeData = this._refreshExtraLifeData.bind(this);
